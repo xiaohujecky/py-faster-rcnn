@@ -27,10 +27,10 @@
      PYTHON_INCLUDE := $(ANACONDA_HOME)/include \
 		 $(ANACONDA_HOME)/include/python2.7 \
 		 $(ANACONDA_HOME)/lib/python2.7/site-packages/numpy/core/include
-		 ```
+     ```
     否则，自己指定PYTHON_INCLUDE目录。我在这里踩的坑是，当我使用Anaconda安装的numpy，和scipy库时，编译报错，原因不详，大概是依赖库安装不全，为了节省时间，我直接使用系统原有的python版本（gentoo系统，python2.7.10，scipy，numpy等常用库都已安装）。     
 	 
-4. python版opencv安装，可以使用[anaconda安装](http://stackoverflow.com/questions/23119413/how-to-install-python-opencv-through-conda)
+4. python版opencv安装，可以使用[anaconda安装](http://stackoverflow.com/questions/23119413/how-to-install-python-opencv-through-conda)   
      ```
     conda install -c https://conda.binstar.org/menpo opencv
     ```
@@ -48,7 +48,8 @@
     -DPYTHON_NUMPY_INCLUDE_DIR=$PYTHON_PREFIX/lib/python2.7/site-packages/numpy/core/include/ \
     -DPYTHON_PACKAGES_PATH=$PYTHON_PREFIX/lib/python2.7/site-packages/ \
     -DBUILD_PYTHON_SUPPORT=ON
-    ```
+    ```   
+    
     ```
     mkdir build
     cd build
