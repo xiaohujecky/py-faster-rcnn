@@ -1,5 +1,5 @@
 # Faster-RCNN安装记录
-按照目录下的[README.md](https://github.com/xiaohujecky/py-faster-rcnn/blob/master/README.md)指示来安装，Follow TIPS.
+按照目录下的[README.md](https://github.com/xiaohujecky/py-faster-rcnn/blob/master/README.md)指示来安装，Follow TIPS.   
 1. git clone --recursive https://github.com/rbgirshick/py-faster-rcnn.git .
 2. Build the Cython modules:
       ```Shell
@@ -10,7 +10,7 @@
     ```
     make -j8 && make pycaffe
     ```
-  不出意料，在这里一般会遇到问题，以下是我遇到的问题。
+  不出意料，在这里一般会遇到问题，以下是我遇到的问题。   
   
 # 遇到的问题：
 1. 在编译caffe-fast-rcnn时，配置Make.config时注意：
@@ -26,14 +26,14 @@
 		 $(ANACONDA_HOME)/include/python2.7 \
 		 $(ANACONDA_HOME)/lib/python2.7/site-packages/numpy/core/include
 		 ```
-		 否则，自己指定PYTHON_INCLUDE目录。我在这里踩的坑是，当我使用Anaconda安装的numpy，和scipy库时，编译报错，原因不详，大概是依赖库安装不全，为了节省时间，我直接使用系统原有的python版本（gentoo系统，python2.7.10，scipy，numpy等常用库都已安装）。
+		 否则，自己指定PYTHON_INCLUDE目录。我在这里踩的坑是，当我使用Anaconda安装的numpy，和scipy库时，编译报错，原因不详，大概是依赖库安装不全，为了节省时间，我直接使用系统原有的python版本（gentoo系统，python2.7.10，scipy，numpy等常用库都已安装）。     
 		
-		 
-4. python版opencv安装，本身也是可以使用[anaconda安装](http://stackoverflow.com/questions/23119413/how-to-install-python-opencv-through-conda)，
+	 
+4. python版opencv安装，可以使用[anaconda安装](http://stackoverflow.com/questions/23119413/how-to-install-python-opencv-through-conda)，
      ```
     conda install -c https://conda.binstar.org/menpo opencv
     ```
-   因为我有opencv2.4.10的安装包，因此直接使用安装包安装：
+   因为有opencv2.4.10的安装包，因此直接使用安装包安装：
    在opencv安装目录opencv-2.4.10下，新建python_opencv_install.sh，内容如下：
    ```
     PYTHON_PREFIX=/usr
