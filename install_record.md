@@ -106,7 +106,7 @@
   export PYTHONPATH=/data/usrname/program/faster-rcnn/caffe-fast-rcnn/distribute/python:$PYTHONPATH
   export LD_LIBRARY_PATH=/data/usrname/program/faster-rcnn/caffe-fast-rcnn/build/lib:/usr/local/lib:$LD_LIBRARY_PATH
   ```
-  注意⚠：PYTHONPATH=/data/usrname/program/blue_rects/faster-rcnn/caffe-fast-rcnn/distribute/python,而非/data/usrname/program/faster-rcnn/caffe-fast-rcnn/distribute/python/caffe
+  注意⚠：PYTHONPATH=/data/usrname/program/faster-rcnn/caffe-fast-rcnn/distribute/python,而非/data/usrname/program/faster-rcnn/caffe-fast-rcnn/distribute/python/caffe
   
   
     
