@@ -71,11 +71,11 @@
     error: legal values: "off" "speed" "space"
     ......
     ```
-    运行./b2时，使用如下命令[问题解决](http://stackoverflow.com/questions/23013433/how-to-install-modular-boost)：
+    运行./b2时，使用如下命令[问题得到最终解决](http://stackoverflow.com/questions/23013433/how-to-install-modular-boost)：
     ./b2 --ignore-site-config 
     
     
-     [Anaconda boost python](https://anaconda.org/meznom/boost-python)没有安装成功，未果。
+     另外，使用[Anaconda boost python](https://anaconda.org/meznom/boost-python)没有安装成功，未果。
     
 6. 其他依赖库：$FRCN_ROOT/caffe-fast-rcnn/python/requirements.txt:
     ```
@@ -103,10 +103,10 @@
   export PATH="/usr/bin:/home/usrname/anaconda2/bin:$PATH"
   export PATH="/data/usrname/software/boost_1_61_0/stage/lib:$PATH"
 
-  export PYTHONPATH=/data/usrname/program/blue_rects/faster-rcnn/caffe-fast-rcnn/distribute/python:$PYTHONPATH
-  export LD_LIBRARY_PATH=/data/usrname/program/blue_rects/faster-rcnn/caffe-fast-rcnn/build/lib:/usr/local/lib:$LD_LIBRARY_PATH
+  export PYTHONPATH=/data/usrname/program/faster-rcnn/caffe-fast-rcnn/distribute/python:$PYTHONPATH
+  export LD_LIBRARY_PATH=/data/usrname/program/faster-rcnn/caffe-fast-rcnn/build/lib:/usr/local/lib:$LD_LIBRARY_PATH
   ```
-  注意⚠：PYTHONPATH=/data/usrname/program/blue_rects/faster-rcnn/caffe-fast-rcnn/distribute/python,而非/data/usrname/program/blue_rects/faster-rcnn/caffe-fast-rcnn/distribute/python/caffe
+  注意⚠：PYTHONPATH=/data/usrname/program/blue_rects/faster-rcnn/caffe-fast-rcnn/distribute/python,而非/data/usrname/program/faster-rcnn/caffe-fast-rcnn/distribute/python/caffe
   
   
     
